@@ -2,7 +2,7 @@
 
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
    @php
-    $settings = \App\Models\Settings::pluck('value', 'key')->toArray();
+    $settings = \App\Models\Setting::pluck('value', 'key')->toArray();
 @endphp
 <head>
     <meta charset="utf-8">
